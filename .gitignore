@@ -1,0 +1,20 @@
+# Gradle / Android
+.gradle/
+build/
+local.properties
+.idea/
+*.iml
+captures/
+.externalNativeBuild/
+
+# Signing (local only, never commit)
+keystore/
+*.jks
+*.keystore
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
