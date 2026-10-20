@@ -1,0 +1,40 @@
+{"id":1,"expect":"ADDRESS","accept":["ADDRESS"],"votes":["ADDRESS","ADDRESS","ADDRESS"],"predicted":"ADDRESS","exact":true,"acceptable":true,"title":"Flat 4B - Rosewood Apartments","ms":10819}
+{"id":2,"expect":"ADDRESS","accept":["ADDRESS"],"votes":["ADDRESS","ADDRESS","ADDRESS"],"predicted":"ADDRESS","exact":true,"acceptable":true,"title":"Marigold Hall - Sector 21","ms":11017}
+{"id":3,"expect":"ADDRESS","accept":["ADDRESS"],"votes":["ADDRESS","ADDRESS","ADDRESS"],"predicted":"ADDRESS","exact":true,"acceptable":true,"title":"Brass Bell Studio","ms":10348}
+{"id":4,"expect":"ADDRESS","accept":["ADDRESS"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Second Left, White Gate","ms":10438}
+{"id":5,"expect":"CODE","accept":["CODE"],"votes":["ADDRESS","ADDRESS","ADDRESS"],"predicted":"ADDRESS","exact":false,"acceptable":false,"title":"WiFi at HomeNet 5G","ms":10799}
+{"id":6,"expect":"CODE","accept":["CODE"],"votes":["CONTACT","CONTACT","CONTACT"],"predicted":"CONTACT","exact":false,"acceptable":false,"title":"Door Code: 4471 #","ms":11266}
+{"id":7,"expect":"CODE","accept":["CODE"],"votes":["LIST","LIST","LINK"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Promo Code: SAVE40","ms":12848}
+{"id":8,"expect":"CODE","accept":["CODE"],"votes":["CODE","CODE","CODE"],"predicted":"CODE","exact":true,"acceptable":true,"title":"License Key: XK3D-2026-PR0-9","ms":13769}
+{"id":9,"expect":"CONTACT","accept":["CONTACT"],"votes":["CONTACT","CONTACT","CONTACT"],"predicted":"CONTACT","exact":true,"acceptable":true,"title":"His Number & WhatsApp","ms":12222}
+{"id":10,"expect":"CONTACT","accept":["CONTACT"],"votes":["LINK","LINK","CONTACT"],"predicted":"LINK","exact":false,"acceptable":false,"title":"Send quote to sana","ms":12836}
+{"id":11,"expect":"CONTACT","accept":["CONTACT"],"votes":["ADDRESS","CONTACT","CONTACT"],"predicted":"CONTACT","exact":true,"acceptable":true,"title":"Rashid’s Flat Pickup","ms":13677}
+{"id":12,"expect":"CONTACT","accept":["CONTACT"],"votes":["CONTACT","CONTACT","CONTACT"],"predicted":"CONTACT","exact":true,"acceptable":true,"title":"K Malik Consultancy Email","ms":13871}
+{"id":13,"expect":"EVENT","accept":["EVENT"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Dinner Friday Thai Place","ms":14169}
+{"id":14,"expect":"EVENT","accept":["EVENT"],"votes":["EVENT","EVENT","EVENT"],"predicted":"EVENT","exact":true,"acceptable":true,"title":"Sam’s Birthday - Lakeside Pavilion","ms":14770}
+{"id":15,"expect":"EVENT","accept":["EVENT"],"votes":["EVENT","EVENT","EVENT"],"predicted":"EVENT","exact":true,"acceptable":true,"title":"Flight Arrival - Terminal 3","ms":14943}
+{"id":16,"expect":"EVENT","accept":["EVENT"],"votes":["EVENT","EVENT","EVENT"],"predicted":"EVENT","exact":true,"acceptable":true,"title":"Meeting Moved Thursday 4:30","ms":13877}
+{"id":17,"expect":"IDEA","accept":["IDEA"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Blue Tea Set Memory","ms":13323}
+{"id":18,"expect":"IDEA","accept":["IDEA"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Mechanical Keyboard Brown Switches","ms":12613}
+{"id":19,"expect":"IDEA","accept":["IDEA"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Terracotta Planters Urgent","ms":9558}
+{"id":20,"expect":"IDEA","accept":["IDEA"],"votes":["EVENT","EVENT","EVENT"],"predicted":"EVENT","exact":false,"acceptable":false,"title":"Rooftop Dinner, No Cruise","ms":9724}
+{"id":21,"expect":"LINK","accept":["LINK"],"votes":["LINK","LINK","LINK"],"predicted":"LINK","exact":true,"acceptable":true,"title":"City River Documentary","ms":9336}
+{"id":22,"expect":"LINK","accept":["LINK"],"votes":["LINK","LINK","LINK"],"predicted":"LINK","exact":true,"acceptable":true,"title":"Attention Explained - Example.com/attention-explained","ms":9711}
+{"id":23,"expect":"LINK","accept":["LINK"],"votes":["LINK","RECIPE","LINK"],"predicted":"LINK","exact":true,"acceptable":true,"title":"Daal Recipe Blog","ms":9736}
+{"id":24,"expect":"LINK","accept":["LINK"],"votes":["LINK","LINK","LINK"],"predicted":"LINK","exact":true,"acceptable":true,"title":"Violin Cover - Save It","ms":9612}
+{"id":25,"expect":"LIST","accept":["LIST"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":true,"acceptable":true,"title":"Milk, Eggs, Rice, Ginger, Lemons, Soap","ms":9816}
+{"id":26,"expect":"LIST","accept":["LIST"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":true,"acceptable":true,"title":"Packing Essentials","ms":9582}
+{"id":27,"expect":"LIST","accept":["LIST"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":true,"acceptable":true,"title":"Submit form, call plumber, pick up dry cleaning","ms":9840}
+{"id":28,"expect":"LIST","accept":["LIST"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":true,"acceptable":true,"title":"Folding Table & Supplies","ms":10962}
+{"id":29,"expect":"RECIPE","accept":["RECIPE"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Chicken Karahi - Quick Recipe","ms":10124}
+{"id":30,"expect":"RECIPE","accept":["RECIPE"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Cold Brew Recipe","ms":9480}
+{"id":31,"expect":"RECIPE","accept":["RECIPE"],"votes":["RECIPE","RECIPE","RECIPE"],"predicted":"RECIPE","exact":true,"acceptable":true,"title":"Banana Bread Recipe","ms":10067}
+{"id":32,"expect":"RECIPE","accept":["RECIPE"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":false,"title":"Fresh Mint & Lemon Blend","ms":9374}
+{"id":33,"expect":"IDEA","accept":["IDEA","LIST"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":true,"title":"Hoodie Size: M, Shoe Size: 42","ms":10424}
+{"id":34,"expect":"IDEA","accept":["IDEA","LIST"],"votes":["LIST","LIST","LIST"],"predicted":"LIST","exact":false,"acceptable":true,"title":"Jacket Price & Hold","ms":10233}
+{"id":35,"expect":"LINK","accept":["LINK","IDEA"],"votes":["LINK","LINK","LINK"],"predicted":"LINK","exact":true,"acceptable":true,"title":"Insane Movie Recommendation","ms":9628}
+{"id":36,"expect":"INBOX","accept":["INBOX"],"votes":["LINK","LINK","LINK"],"predicted":"LINK","exact":false,"acceptable":false,"title":"File Delivery Request","ms":9662}
+{"id":37,"expect":"EVENT","accept":["EVENT","INBOX"],"votes":["EVENT","EVENT","EVENT"],"predicted":"EVENT","exact":true,"acceptable":true,"title":null,"ms":12409}
+{"id":38,"expect":"INBOX","accept":["INBOX"],"votes":["LINK","LINK","LINK"],"predicted":"LINK","exact":false,"acceptable":false,"title":"Cafe Wifi Down","ms":9952}
+{"id":39,"expect":"CODE","accept":["CODE"],"votes":["CODE","CODE","CODE"],"predicted":"CODE","exact":true,"acceptable":true,"title":"OTP Login Expires","ms":9852}
+{"id":40,"expect":"ADDRESS","accept":["ADDRESS","INBOX"],"votes":["CONTACT","ADDRESS","ADDRESS"],"predicted":"ADDRESS","exact":true,"acceptable":true,"title":"Cash Only. ATM Far Away","ms":9988}
