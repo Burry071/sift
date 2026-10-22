@@ -21,3 +21,4 @@ Thumbs.db
 
 # Local agent-session payloads (not app artifacts)
 session_*.json
+devrelay_update_response.json
