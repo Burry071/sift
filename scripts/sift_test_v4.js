@@ -128,7 +128,9 @@ function titleLooksDegenerate(title, text) {
     const exact = predicted === e.cat;
     const acceptable = e.accept.includes(predicted);
     const row = { id: e.id, expect: e.cat, accept: e.accept, votes: rawVotes, predicted, exact, acceptable, title, ms: Date.now() - te };
-    (e.accept.length > 1 ? ambigRows : clearRows).push(row);
+    // Gate split is pre-registered on corpus ids 1-32 clear / 33-40 ambiguous
+    // (ids 36/38 have single-element accept arrays but are part of the 8).
+    (e.id <= 32 ? clearRows : ambigRows).push(row);
     out.write(JSON.stringify(row) + '\n');
     console.log(`[${e.id}/${entries.length}] expect=${e.cat} pred=${predicted} ${exact ? 'OK' : acceptable ? 'ok-set' : 'MISS'} (${row.ms}ms)${title ? ' title="' + title + '"' : ''}`);
   }
@@ -143,9 +145,9 @@ function titleLooksDegenerate(title, text) {
   const titled = [...clearRows, ...ambigRows].filter(r => r.title).length;
 
   console.log('\n==== SUMMARY v4 (Gazette format: raw generate, grouped examples) ====');
-  console.log(`model=${MODEL} votes=${VOTES} corpus=${entries.length} (32 clear + 8 ambiguous), ALL SNIPPETS INVENTED`);
-  console.log(`clear:   exact ${cExact}/32, acceptable ${cAccept}/32`);
-  console.log(`ambiguous: exact ${aExact}/8, acceptable ${aAccept}/8`);
+  console.log(`model=${MODEL} votes=${VOTES} corpus=${entries.length} (${clearRows.length} clear + ${ambigRows.length} ambiguous), ALL SNIPPETS INVENTED`);
+  console.log(`clear:   exact ${cExact}/${clearRows.length}, acceptable ${cAccept}/${clearRows.length}`);
+  console.log(`ambiguous: exact ${aExact}/${ambigRows.length}, acceptable ${aAccept}/${ambigRows.length}`);
   console.log(`fail-safe INBOX predictions: ${inboxCount}/${entries.length}  | malformed raw outputs: ${malformed}/${entries.length * VOTES}`);
   console.log(`titles kept (non-degenerate): ${titled}/${entries.length}`);
   console.log(`total ${t.toFixed(1)}s = ${(t / entries.length).toFixed(1)}s/entry`);

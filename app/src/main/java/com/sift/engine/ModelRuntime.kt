@@ -3,11 +3,11 @@ package com.sift.engine
 import android.content.Context
 import android.net.Uri
 import com.google.ai.edge.litertlm.Backend
+import com.google.ai.edge.litertlm.Content
+import com.google.ai.edge.litertlm.ConversationConfig
 import com.google.ai.edge.litertlm.Engine
 import com.google.ai.edge.litertlm.EngineConfig
-import com.google.ai.edge.litertlm.InputData
 import com.google.ai.edge.litertlm.SamplerConfig
-import com.google.ai.edge.litertlm.SessionConfig
 import com.sift.pipeline.LlmEngine
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -80,23 +80,27 @@ object ModelRuntime {
     private class Adapter(private val engine: Engine) : LlmEngine {
 
         override suspend fun generate(prompt: String, maxNewTokens: Int, temperature: Double): String {
-            // A fresh session per call: sessions accumulate context, and each
-            // generation must start clean. Fresh seed per call so the vote
-            // samples differ from one another.
-            val session = engine.createSession(
-                SessionConfig(
+            // A fresh conversation per call: history accumulates otherwise, and
+            // each generation must start clean. Fresh seed per call so the vote
+            // samples differ from one another. The conversation API applies the
+            // model's chat template; raw session prefill degenerates on Gemma 4.
+            val conversation = engine.createConversation(
+                ConversationConfig(
                     samplerConfig = SamplerConfig(
                         topK = 40,
                         topP = 0.95,
                         temperature = temperature,
                         seed = Random.nextInt(),
-                    )
+                    ),
+                    maxOutputToken = maxNewTokens,
                 )
             )
             return try {
-                session.generateContent(listOf(InputData.Text(prompt)))
+                conversation.sendMessage(prompt).contents.contents
+                    .filterIsInstance<Content.Text>()
+                    .joinToString("") { it.text }
             } finally {
-                session.close()
+                conversation.close()
             }
         }
     }

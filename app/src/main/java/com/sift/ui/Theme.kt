@@ -81,6 +81,13 @@ object SiftType {
         lineHeight = 15.6.sp,
         letterSpacing = 0.10.em,
     )
+    val promptTitle = TextStyle(
+        fontFamily = SchibstedGrotesk,
+        fontSize = 24.sp,
+        fontWeight = FontWeight.SemiBold,
+        lineHeight = 29.sp,
+        letterSpacing = (-0.01).em,
+    )
 }
 
 @Composable

@@ -77,7 +77,7 @@ chat bubbles.
 Single screen, top to bottom:
 
 1. **Wordmark + status line.** "SIFT" left; status right
-   ("3 kept today · 4 filed overnight" — count in pine when > 0).
+   ("7 kept · 0 filed" while the queue waits, "7 filed" once it drains).
    Hairline below, then the summary double rule (the catalog's header
    signature, echoing Gazette's accounting double rule).
 2. **UNFILED section** (only while items await the night): gray label,

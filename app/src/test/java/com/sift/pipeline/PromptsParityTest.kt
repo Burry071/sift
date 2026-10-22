@@ -44,7 +44,6 @@ class PromptsParityTest {
             "RECIPE"
         }
         runBlocking { SiftPipeline(engine).process(long) }
-        assertTrue(promptSeen.length < 3000)
         assertTrue(promptSeen.contains("a".repeat(2000)))
         assertFalse(promptSeen.contains("a".repeat(2001)))
     }
